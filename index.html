@@ -64,11 +64,15 @@
     }
 
     .main-body h1 {
+      position: absolute;
+      top: 45%;
       opacity: 0;
       transition: opacity 2s ease;
     }
 
     .main-body h5 {
+      position: absolute;
+      top: 50%;
       opacity: 0;
       transition: opacity 2s ease;
     }
@@ -81,6 +85,23 @@
       background-color: black;
       color: white;
       height: 100vh;
+    }
+
+    html {
+      overflow: scroll;
+      overflow-x: hidden;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      /* Remove scrollbar space */
+      background: transparent;
+      /* Optional: just make scrollbar invisible */
+    }
+
+    /* Optional: show position indicator in red */
+    ::-webkit-scrollbar-thumb {
+      background: #FF0000;
     }
 
     @keyframes spin {
@@ -139,6 +160,7 @@
     <h1>CHATGPT BOT</h1>
     <h5>User Manual</h5>
   </div>
+
 
   <div class="info-page">
     <div class="info-header">
