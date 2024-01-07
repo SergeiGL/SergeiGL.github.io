@@ -23,7 +23,7 @@
     }
 
     .main-body {
-      position: relative;
+      position: absolute;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -72,7 +72,7 @@
 
     .main-body h5 {
       position: absolute;
-      top: 50%;
+      top: 49%;
       opacity: 0;
       transition: opacity 2s ease;
     }
@@ -95,8 +95,6 @@
     ::-webkit-scrollbar {
       width: 0;
       /* Remove scrollbar space */
-      background: transparent;
-      /* Optional: just make scrollbar invisible */
     }
 
     /* Optional: show position indicator in red */
@@ -115,11 +113,20 @@
     }
 
     .logo {
-      width: 20vw;
-      position: relative;
+      width: 10vw;
+      position: absolute;
       transform: translate(-50%, -50%);
       animation: spin 1s linear;
     }
+
+    .logo {
+      width: 10vw;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      animation: spin 1s linear forwards;
+      /* Add "forwards" to keep the final state of the animation */
+    }
+
 
     .move-logo {
       animation: none;
@@ -127,36 +134,13 @@
       transition: transform 1s ease, opacity 1s ease;
       opacity: 0;
     }
-
-    .header-logo {
-      width: 20vw;
-    }
-
-    .center-dot {
-      width: 10px;
-      /* Dot size */
-      height: 10px;
-      /* Dot size */
-      background-color: red;
-      /* Dot color */
-      border-radius: 50%;
-      /* Makes it round */
-      position: absolute;
-      /* Positioning relative to parent */
-      top: 50%;
-      /* Center vertically */
-      left: 50%;
-      /* Center horizontally */
-      transform: translate(-50%, -50%);
-      /* Adjust the exact center position */
-    }
   </style>
 </head>
 
 <body>
   <div class="main-body">
-    <div class="center-dot"></div>
-    <img src="logo.png" alt="Loading..." class="logo">
+    <!-- <div class="center-dot"></div> -->
+    <img src="logo-removebg.png" class="logo">
     <h1>CHATGPT BOT</h1>
     <h5>User Manual</h5>
   </div>
