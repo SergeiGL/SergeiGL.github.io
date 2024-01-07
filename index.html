@@ -1,47 +1,180 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>OpenAI Data Partnerships</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: white;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+      padding: 20px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .main-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      padding-top: 0px;
+    }
+
+    .info-page {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background-color: black;
+      color: white;
+      height: 100vh;
+      padding-top: 60px;
+      /* Adjust based on header height */
+    }
+
+    .info-header {
+      text-align: center;
+    }
+
+    .sub-info {
+      text-align: center;
+    }
+
+    .main-body {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+    }
+
+    .main-body h1 {
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .main-body h5 {
+      opacity: 0;
+      transition: opacity 2s ease;
+    }
+
+    .info-page {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: black;
+      color: white;
+      height: 100vh;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .logo {
+      width: 20vw;
+      position: relative;
+      transform: translate(-50%, -50%);
+      animation: spin 1s linear;
+    }
+
+    .move-logo {
+      animation: none;
+      transform: scale(1);
+      transition: transform 1s ease, opacity 1s ease;
+      opacity: 0;
+    }
+
+    .header-logo {
+      width: 20vw;
+    }
+
+    .center-dot {
+      width: 10px;
+      /* Dot size */
+      height: 10px;
+      /* Dot size */
+      background-color: red;
+      /* Dot color */
+      border-radius: 50%;
+      /* Makes it round */
+      position: absolute;
+      /* Positioning relative to parent */
+      top: 50%;
+      /* Center vertically */
+      left: 50%;
+      /* Center horizontally */
+      transform: translate(-50%, -50%);
+      /* Adjust the exact center position */
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <h1>OpenAI Data Partnerships</h1>
-    </header>
-    <section class="main-image">
-        <img src="https://images.openai.com/blob/abb3c0a3-ec87-4cd5-8bec-55475bf3d757/data-partnerships.png"
-            alt="OpenAI Data Partnerships Image">
-    </section>
-    <section class="content">
-        <p>Modern AI technology learns skills and aspects of our world — of people, our motivations, interactions, and
-            the way we communicate — by making sense of the data on which it’s trained.</p>
+  <div class="main-body">
+    <div class="center-dot"></div>
+    <img src="logo.png" alt="Loading..." class="logo">
+    <h1>CHATGPT BOT</h1>
+    <h5>User Manual</h5>
+  </div>
 
-        <h2>The kinds of data seeking</h2>
-        <p>We are interested in large-scale datasets that reflect human society and that are not already easily
-            accessible.</p>
-
-        <h2>Ways to partner with us</h2>
-        <p>We currently have two ways to partner, and may expand in the future:</p>
-        <ul>
-            <li>Open-Source Archive: We’re seeking partners to help us create an open-source dataset for training
-                language models. This dataset would be public for anyone to use in AI model training. We would also
-                explore using it to safely train additional open-source models ourselves. We believe open-source plays
-                an important role in the ecosystem.</li>
-            <li>Private Datasets: We are also preparing private datasets for training proprietary AI models, including
-                our foundation models and fine-tuned and custom models. If you have data you wish to contribute, please
-                contact us.</li>
-        </ul>
-    </section>
+  <div class="info-page">
+    <div class="info-header">
+      <h1>Basic Info</h1>
+    </div>
+    <div class="sub-info">
+      <h3>What is CHATGPT?</h3>
+    </div>
     <section class="audio-player">
-        <h2>Audio Message</h2>
-        <audio controls>
-            <source src="counting_stars.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+      <audio controls>
+        <source src="counting_stars.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
     </section>
+  </div>
+
+
+
+
+  <script>
+    setTimeout(function () {
+      var logo = document.querySelector('.logo');
+      logo.style.position = 'static'; // Reset the position to static
+      logo.classList.add('move-logo');
+      logo.addEventListener('transitionend', function () {
+        logo.remove(); // Remove logo after fading out
+        document.querySelector('.main-body h1').style.opacity = 1; // Show the text
+        document.querySelector('.main-body h5').style.opacity = 1; // Show the text
+      });
+
+      setTimeout(function () {
+        document.querySelector('.info-page').style.display = 'flex';
+      }, 1000);
+
+    }, 1000);    
+  </script>
 
 </body>
 
