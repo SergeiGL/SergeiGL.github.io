@@ -16,33 +16,8 @@
       justify-content: center;
       align-items: center;
       background-color: black;
-      padding: 20px 0;
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
-
-    .main-body {
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 100vh;
-      padding-top: 0px;
-    }
-
-    .info-page {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      background-color: black;
-      color: white;
-      height: 100vh;
-      padding-top: 60px;
-      /* Adjust based on header height */
+      padding: 0px;
+      height: 14vh;
     }
 
     .info-header {
@@ -54,37 +29,28 @@
     }
 
     .main-body {
-      position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
-      height: 100vh;
+      height: 60vh;
     }
 
-    .main-body h1 {
-      position: absolute;
-      top: 45%;
-      opacity: 0;
-      transition: opacity 2s ease;
-    }
-
+    .main-body h1,
     .main-body h5 {
-      position: absolute;
-      top: 49%;
-      opacity: 0;
-      transition: opacity 2s ease;
+      margin: 0.4rem;
     }
 
     .info-page {
-      display: none;
+      display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: center;
       background-color: black;
       color: white;
-      height: 100vh;
+      height: 60vh;
     }
 
     html {
@@ -94,7 +60,6 @@
 
     ::-webkit-scrollbar {
       width: 0;
-      /* Remove scrollbar space */
     }
 
     /* Optional: show position indicator in red */
@@ -113,20 +78,10 @@
     }
 
     .logo {
-      width: 10vw;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      animation: spin 1s linear;
+      width: 7vw;
+      position: relative;
+      animation: spin 1s linear infinite;
     }
-
-    .logo {
-      width: 10vw;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      animation: spin 1s linear forwards;
-      /* Add "forwards" to keep the final state of the animation */
-    }
-
 
     .move-logo {
       animation: none;
@@ -138,13 +93,15 @@
 </head>
 
 <body>
-  <div class="main-body">
-    <!-- <div class="center-dot"></div> -->
+
+  <div class="header">
     <img src="logo-removebg.png" class="logo">
+  </div>
+
+  <div class="main-body">
     <h1>CHATGPT BOT</h1>
     <h5>User Manual</h5>
   </div>
-
 
   <div class="info-page">
     <div class="info-header">
@@ -160,27 +117,6 @@
       </audio>
     </section>
   </div>
-
-
-
-
-  <script>
-    setTimeout(function () {
-      var logo = document.querySelector('.logo');
-      logo.style.position = 'static'; // Reset the position to static
-      logo.classList.add('move-logo');
-      logo.addEventListener('transitionend', function () {
-        logo.remove(); // Remove logo after fading out
-        document.querySelector('.main-body h1').style.opacity = 1; // Show the text
-        document.querySelector('.main-body h5').style.opacity = 1; // Show the text
-      });
-
-      setTimeout(function () {
-        document.querySelector('.info-page').style.display = 'flex';
-      }, 1000);
-
-    }, 1000);    
-  </script>
 
 </body>
 
