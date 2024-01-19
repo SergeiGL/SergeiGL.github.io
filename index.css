@@ -55,17 +55,18 @@ html {
 }
 
 .audio-class {
-  width: 70%;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  width: 60%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 .plyr--audio {
   --plyr-audio-controls-background: none;
-  --plyr-control-icon-size: 1.85rem;
+  --plyr-control-icon-size: 2.2rem;
   --plyr-audio-control-color: var(--default-text-color);
   --plyr-control-radius: var(--border-radius-global);
   --plyr-audio-control-background-hover: var(--gpt-4-bg-color);
+  --plyr-control-spacing: 1rem;
 }
 
 .top-logo-cont {
