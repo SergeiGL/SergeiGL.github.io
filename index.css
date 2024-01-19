@@ -11,12 +11,13 @@
 
 
   --gradient-color-start: #abacd1;
-  --gradient-color-middle: #6b2b68;
-  --gradient-color-end: #791f79;
+  --gradient-color-middle: #2d62de;
+  --gradient-color-end: #e784e7;
 
-  --gradient-gpt-4-color-start: #55229c;
-  --gradient-gpt-4-color-middle: #7c1f78;
-  --gradient-gpt-4-color-end: #500f56;
+  --gradient-gpt-4-color-start: #9ead70;
+  --gradient-gpt-4-color-middle: #8c9f20;
+  --gradient-gpt-4-color-end: #d5d522;
+  --gpt-4-color-solid: #922525;
 
   --organogram-box-bg: #e3dfee;
   --your-avd-box-bg: #e3dfee;
@@ -52,14 +53,14 @@
 }
 
 .audio-class {
-  width: 85%;
-  margin-top: 4rem;
+  width: 70%;
+  margin-top: 3rem;
   margin-bottom: 4rem;
 }
 
 .plyr--audio {
   --plyr-audio-controls-background: none;
-  --plyr-control-icon-size: 1.8rem;
+  --plyr-control-icon-size: 1.85rem;
   --plyr-audio-control-color: var(--default-text-color);
 }
 
@@ -213,6 +214,7 @@
 .start-text {
   margin-top: 2rem;
   margin-right: 1rem;
+  margin-bottom: 8rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -264,7 +266,7 @@ ul {
   align-self: center;
   align-content: center;
   list-style-type: none;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .li_3_5 {
@@ -280,13 +282,13 @@ ul {
   position: relative;
   text-align: center;
   margin: 5px;
-  background: linear-gradient(25deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end));
+  /* background: linear-gradient(25deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end)); */
+  background: var(--gpt-4-color-solid);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   font-family: 'Alumni Sans', sans-serif;
   font-size: var(--font-size-in-boxes);
-  font-weight: bold;
 }
 
 .span_free_vs_paid_3_5 {
@@ -338,7 +340,7 @@ ul {
   margin-top: 0.2rem;
   position: relative;
   text-align: center;
-  background: var(--dark-text-color);
+  background: var(--default-text-color);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -363,7 +365,7 @@ ul {
 .gpt-35-free-info-card {
   color: var(--default-text-color);
   padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -397,7 +399,7 @@ ul {
 .gpt-4-free-info-card {
   color: var(--default-text-color);
   padding-top: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.4rem;
   width: 100%;
   height: auto;
   display: flex;
