@@ -37,17 +37,8 @@
   --font-size-in-boxes: 1.5rem;
 }
 
-
-.header {
-  background-color: black;
-  padding: 20px;
-  padding-top: env(safe-area-inset-top);
-}
-
-.footer {
-  background-color: black;
-  padding: 20px;
-  padding-bottom: env(safe-area-inset-bottom);
+html {
+  background-color: #000000;
 }
 
 ::-webkit-scrollbar {
