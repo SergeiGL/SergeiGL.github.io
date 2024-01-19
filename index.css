@@ -38,7 +38,7 @@
 }
 
 html {
-  background-color: #000000;
+  background-color: var(--secondary-canvas-color);
 }
 
 ::-webkit-scrollbar {
@@ -141,7 +141,7 @@ html {
 
 .donate-cont {
   color: var(--default-text-color);
-  background-color: var(--main-canvas-color);
+  background: linear-gradient(to bottom, var(--main-canvas-color), var(--secondary-canvas-color));
   width: 100%;
   display: flex;
   align-items: center;
@@ -443,6 +443,10 @@ ul {
   align-items: stretch;
   justify-content: center;
 }
+
+
+
+
 
 
 
