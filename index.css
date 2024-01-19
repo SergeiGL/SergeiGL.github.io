@@ -37,9 +37,6 @@
 }
 
 
-.plyr--audio {
-  --plyr-audio-controls-background: none;
-}
 
 
 ::-webkit-scrollbar {
@@ -58,6 +55,12 @@
   width: 85%;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.plyr--audio {
+  --plyr-audio-controls-background: none;
+  --plyr-control-icon-size: 1.8rem;
+  --plyr-audio-control-color: var(--default-text-color);
 }
 
 .top-logo-cont {

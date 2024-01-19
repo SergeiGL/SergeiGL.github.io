@@ -27,7 +27,7 @@
       <span>Что такое CHAT GPT</span>
     </span>
     <div class="audio-class">
-      <audio id="player" controls>
+      <audio id="player1" controls>
         <source src="counting_stars.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
@@ -50,10 +50,12 @@
         <span>Ваши преимущества<br></span>
         <span class="with-us">С нами</span>
       </span>
-      <audio controls controlslist="nodownload">
-        <source src="counting_stars.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+      <div class="audio-class">
+        <audio id="player2" controls>
+          <source src="counting_stars.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
     <div class="all-adv-cont">
       <div class="your-adv">
@@ -87,10 +89,12 @@
       <span class="heading-of-section">
         <span>Как пользоваться ботом</span>
       </span>
-      <audio controls controlslist="nodownload">
-        <source src="counting_stars.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+      <div class="audio-class">
+        <audio id="player3" controls>
+          <source src="counting_stars.mp3" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
     </div>
     <div class="start-text">
       <span>/start</span>
@@ -103,10 +107,12 @@
         <span class="heading-of-section">
           <span>Выбор модели</span>
         </span>
-        <audio controls controlslist="nodownload">
-          <source src="counting_stars.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
+        <div class="audio-class">
+          <audio id="player4" controls>
+            <source src="counting_stars.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
       </div>
       <div class="model-cards-cont">
         <div class="gpt-35-info-card">
@@ -180,10 +186,36 @@
 <!-- Audio script -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const player = new Plyr('#player', {
+    const player1 = new Plyr('#player1', {
       controls: [
         'play-large', // The large play button in the center
-        'restart', // Restart playback
+        'rewind', // Rewind by the seek time (default 10 seconds)
+        'play', // Play/pause playback
+        'fast-forward', // Fast forward by the seek time (default 10 seconds)
+        'progress', // The progress bar and scrubber for playback and buffering
+      ],
+    });
+    const player2 = new Plyr('#player2', {
+      controls: [
+        'play-large', // The large play button in the center
+        'rewind', // Rewind by the seek time (default 10 seconds)
+        'play', // Play/pause playback
+        'fast-forward', // Fast forward by the seek time (default 10 seconds)
+        'progress', // The progress bar and scrubber for playback and buffering
+      ],
+    });
+    const player3 = new Plyr('#player3', {
+      controls: [
+        'play-large', // The large play button in the center
+        'rewind', // Rewind by the seek time (default 10 seconds)
+        'play', // Play/pause playback
+        'fast-forward', // Fast forward by the seek time (default 10 seconds)
+        'progress', // The progress bar and scrubber for playback and buffering
+      ],
+    });
+    const player4 = new Plyr('#player4', {
+      controls: [
+        'play-large', // The large play button in the center
         'rewind', // Rewind by the seek time (default 10 seconds)
         'play', // Play/pause playback
         'fast-forward', // Fast forward by the seek time (default 10 seconds)
