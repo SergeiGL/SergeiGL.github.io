@@ -23,11 +23,11 @@
 
   --heading-of-section-text-size: 3.3rem;
 
-  --opacity-box: 0.97;
+  --opacity-box: 0.99;
 
   --section-cont-pad-top: 6rem;
-  --section-cont-pad-left: 6rem;
-  --section-cont-pad-right: 6rem;
+  --section-cont-pad-left: 4rem;
+  --section-cont-pad-right: 4rem;
   --section-cont-pad-bott: 10rem;
 
   --border-radius-global: 1.5rem;
@@ -53,7 +53,6 @@ audio {
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
-
 
 .top-logo-cont {
   color: var(--default-text-color);
@@ -361,7 +360,6 @@ ul {
 
 
 .gpt-35-info-card {
-  margin-left: 2rem;
   color: var(--default-text-color);
   width: 100%;
   height: auto;
@@ -376,7 +374,6 @@ ul {
 }
 
 .gpt-4-info-card {
-  margin-right: 2rem;
   color: var(--default-text-color);
   width: 100%;
   height: auto;
