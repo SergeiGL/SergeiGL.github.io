@@ -38,7 +38,17 @@
 }
 
 
+.header {
+  background-color: black;
+  padding: 20px;
+  padding-top: env(safe-area-inset-top);
+}
 
+.footer {
+  background-color: black;
+  padding: 20px;
+  padding-bottom: env(safe-area-inset-bottom);
+}
 
 ::-webkit-scrollbar {
   width: 0;
