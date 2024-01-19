@@ -37,6 +37,11 @@
 }
 
 
+.plyr--audio {
+  --plyr-audio-controls-background: none;
+}
+
+
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -203,7 +208,9 @@ audio {
 
 
 
-.gradient-text {
+.start-text {
+  margin-top: 2rem;
+  margin-right: 1rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;

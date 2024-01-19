@@ -10,8 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" rel="stylesheet">
   <title>GPT bot manual</title>
-
-
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 </head>
 
 <body>
@@ -27,8 +26,8 @@
     <span class="heading-of-section">
       <span>Что такое CHAT GPT</span>
     </span>
-    <audio controls controlslist="nodownload">
-      <source src="counting_stars.mp3" type="audio/mpeg">
+    <audio id="player" controls>
+      <source src="counting_stars.mp3" type="audio/mp3">
       Your browser does not support the audio element.
     </audio>
     <div class="organogram">
@@ -91,7 +90,7 @@
         Your browser does not support the audio element.
       </audio>
     </div>
-    <div class="gradient-text">
+    <div class="start-text">
       <span>/start</span>
     </div>
   </div>
@@ -166,6 +165,7 @@
 </body>
 
 
+<!-- Donate script -->
 <script>
   var redirectElement = document.getElementById('redirectElement');
 
@@ -173,5 +173,24 @@
     window.location.href = 'https://www.tinkoff.ru/cf/315K4lnHz0T';
   });
 </script>
+
+
+<!-- Audio script -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const player = new Plyr('#player', {
+      controls: [
+        'play-large', // The large play button in the center
+        'restart', // Restart playback
+        'rewind', // Rewind by the seek time (default 10 seconds)
+        'play', // Play/pause playback
+        'fast-forward', // Fast forward by the seek time (default 10 seconds)
+        'progress', // The progress bar and scrubber for playback and buffering
+      ],
+    });
+  });
+</script>
+
+<script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 
 </html>
