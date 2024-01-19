@@ -1,123 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      background-color: black;
-      color: white;
-    }
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link href="./index.css" rel="stylesheet" />
 
-    .header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: black;
-      padding: 0px;
-      height: 10rem;
-    }
 
-    .info-header {
-      text-align: center;
-    }
 
-    .sub-info {
-      text-align: center;
-    }
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&display=swap" rel="stylesheet">
 
-    .main-body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      height: 40rem;
-    }
 
-    .main-body h1,
-    .main-body h5 {
-      margin: 0.4rem;
-    }
-
-    .info-page {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      background-color: black;
-      color: white;
-      height: 40rem;
-    }
-
-    html {
-      overflow: scroll;
-      overflow-x: hidden;
-    }
-
-    ::-webkit-scrollbar {
-      width: 0;
-    }
-
-    /* Optional: show position indicator in red */
-    ::-webkit-scrollbar-thumb {
-      background: #FF0000;
-    }
-
-    @keyframes spin {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .logo {
-      width: 4rem;
-      position: relative;
-      animation: spin 1s linear infinite;
-    }
-
-    .move-logo {
-      animation: none;
-      transform: scale(1);
-      transition: transform 1s ease, opacity 1s ease;
-      opacity: 0;
-    }
-  </style>
 </head>
 
 <body>
-
-  <div class="header">
-    <img src="logo-removebg.png" class="logo">
-  </div>
-
-  <div class="main-body">
-    <h1>CHATGPT BOT</h1>
-    <h5>User Manual</h5>
-  </div>
-
-  <div class="info-page">
-    <div class="info-header">
-      <h1>Basic Info</h1>
+  <div class="top-logo-cont">
+    <div class="heading-of-section-cont">
+      <img src="logo-removebg.png" class="logo">
+      <span class="heading-of-section">
+        <span>Инструкция</span>
+      </span>
     </div>
-    <div class="sub-info">
-      <h3>What is CHATGPT?</h3>
+  </div>
+  <div class="what-is-gpt-cont">
+    <span class="heading-of-section">
+      <span>Что такое CHAT GPT</span>
+    </span>
+    <audio controls controlslist="nodownload">
+      <source src="counting_stars.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <div class="organogram">
+      <div class="main cc"><img src="logo-removebg.png" class="diagram-logo"></div>
+      <div class="sub  tl"><span>Отвечает на любой вопрос</span></div>
+      <div class="sub  tc"><span>Знает всё о мире</span></div>
+      <div class="sub  tr"><span>Помнит предыдущий разговор</span></div>
+      <!-- <div class="sub  cl"><span>Знает всё о мире</span></div> -->
+      <!-- <div class="sub  cr"><span>Блестяще пишет тексты</span></div> -->
+      <div class="sub  bl"><span>Разговаривает как человек</span></div>
+      <div class="sub  bc"><span>Блестяще пишет тексты</span></div>
+      <div class="sub  br"><span>Быстро ищет информацию</span></div>
     </div>
-    <section class="audio-player">
-      <audio controls>
+  </div>
+  <div class="your-adv-cont">
+    <div class="heading-of-section-cont">
+      <span class="heading-of-section">
+        <span>Ваши преимущества<br></span>
+        <span class="with-us">С нами</span>
+      </span>
+      <audio controls controlslist="nodownload">
         <source src="counting_stars.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
       </audio>
-    </section>
+    </div>
+    <div class="all-adv-cont">
+      <div class="your-adv">
+        <span>Бесплатные модели без ограничений</span>
+      </div>
+      <div class="your-adv">
+        <span>Никакой рекламы</span>
+      </div>
+      <div class="your-adv">
+        <span>Пополнение баланса на сумму от 100 руб</span>
+      </div>
+      <div class="your-adv">
+        <span>Стартовый баланс для тестирования платных моделей</span>
+      </div>
+      <div class="your-adv">
+        <span>Платные модели по ценам openai.com</span>
+      </div>
+      <div class="your-adv">
+        <span>Не нужны иностранная SIM карта и VPN для регистрации на openai.com</span>
+      </div>
+      <div class="your-adv">
+        <span>Не нужна иностранная банковская карта для пополения баланса</span>
+      </div>
+      <div class="your-adv">
+        <span>Функциональный интерфейс и быстрая поддержка</span>
+      </div>
+    </div>
   </div>
-
+  <div class="how-to-use-cont">
+    <div class="heading-of-section-cont">
+      <span class="heading-of-section">
+        <span>Как пользоваться ботом</span>
+      </span>
+      <audio controls controlslist="nodownload">
+        <source src="counting_stars.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+    <div class="gradient-text">
+      <span>/start</span>
+    </div>
+  </div>
+  </div>
+  <div class="home-models">
+    <div class="choose-model-cont">
+      <div class="heading-of-section-cont">
+        <span class="heading-of-section">
+          <span>Выбор модели</span>
+        </span>
+        <audio controls controlslist="nodownload">
+          <source src="counting_stars.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="model-cards-cont">
+        <div class="gpt-35-info-card">
+          <span class="span3_5">GPT 3.5</span>
+          <div class="li_div_3_5">
+            <ul>
+              <li class="li_3_5">Быстрые ответы</li>
+              <li class="li_3_5">Хорош для бытовых задач</li>
+              <li class="li_3_5">Примерно в 25 раз дешевле</li>
+            </ul>
+          </div>
+          <span class="span_free_vs_paid_3_5">Отличия бесплатного</span>
+          <div class="free_vs_paid_3_5">
+            <ul>
+              <li class="li_3_5_free">Увеличенное время ответа</li>
+              <li class="li_3_5_free">Знает меньше информации</li>
+              <li class="li_3_5_free">Отсутствуют некоторые функции</li>
+              <li class="li_3_5_free">Может выдавать ошибку при работе</li>
+            </ul>
+          </div>
+        </div>
+        <div class="gpt-4-info-card">
+          <span class="span4">GPT 4</span>
+          <div class="li_div_4">
+            <ul>
+              <li class="li_4">Гораздо "умнее"</li>
+              <li class="li_4">Более полные ответы</li>
+              <li class="li_4">Лучше понимает контекст</li>
+              <li class="li_4">Расширенный функционал</li>
+              <li class="li_4">Самая современная модель</li>
+              <li class="li_4">х1000 параметров</li>
+            </ul>
+          </div>
+          <span class="span_free_vs_paid_4">Отличия бесплатного</span>
+          <div class="free_vs_paid_4">
+            <ul>
+              <li class="li_4_free">Увеличенное время ответа</li>
+              <li class="li_4_free">Знает меньше информации</li>
+              <li class="li_4_free">Отсутствуют некоторые функции</li>
+              <li class="li_4_free">Может выдавать ошибку при работе</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="donate-cont">
+    <span class="heading-of-section" , id="redirectElement">
+      <span class="text-donate">Поддержать проект</span>
+    </span>
+  </div>
 </body>
+
+
+<script>
+  var redirectElement = document.getElementById('redirectElement');
+
+  redirectElement.addEventListener('click', function () {
+    window.location.href = 'https://www.tinkoff.ru/cf/315K4lnHz0T';
+  });
+</script>
 
 </html>
