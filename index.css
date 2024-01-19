@@ -7,7 +7,7 @@
   --dark-text-color: #0a0a0a;
 
   --gpt-35-bg-color: #f0e6df;
-  --gpt4-gb-color: #3782c3;
+  --gpt4-bg-color: #3782c3;
 
 
   --gradient-color-start: #abacd1;
@@ -64,6 +64,8 @@ html {
   --plyr-audio-controls-background: none;
   --plyr-control-icon-size: 1.85rem;
   --plyr-audio-control-color: var(--default-text-color);
+  --plyr-control-radius: var(--border-radius-global);
+  --plyr-audio-control-background-hover: var(--gpt-4-bg-color);
 }
 
 .top-logo-cont {
@@ -232,7 +234,7 @@ html {
   position: relative;
   margin-top: 2rem;
   align-self: center;
-  color: var(--gpt4-gb-color);
+  color: var(--gpt4-bg-color);
   font-family: 'Alumni Sans', sans-serif;
   font-weight: bold;
   font-size: 3.2rem;
@@ -297,7 +299,7 @@ ul {
   margin: 0.1rem;
   position: relative;
   align-self: center;
-  color: var(--gpt4-gb-color);
+  color: var(--gpt4-bg-color);
   font-family: 'Alumni Sans', sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
@@ -395,7 +397,7 @@ ul {
   align-items: flex-start;
   border-radius: var(--border-radius-global);
   flex-direction: column;
-  background-color: var(--gpt4-gb-color);
+  background-color: var(--gpt4-bg-color);
 }
 
 .gpt-4-free-info-card {
@@ -409,7 +411,7 @@ ul {
   align-items: flex-start;
   border-radius: var(--border-radius-global);
   flex-direction: column;
-  background-color: var(--gpt4-gb-color);
+  background-color: var(--gpt4-bg-color);
   opacity: var(--opacity-sub-box);
 }
 
