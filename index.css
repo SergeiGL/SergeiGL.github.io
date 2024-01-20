@@ -6,35 +6,29 @@
 
   --dark-text-color: #0a0a0a;
 
-  --gpt-35-bg-color: #f0e6df;
-  --gpt4-bg-color: #3782c3;
+  --gradient-color-start: #97e0e1;
+  --gradient-color-middle: #6dd8f0;
+  --gradient-color-end: #84f0d1;
 
+  --organogram-box-bg: #ebe5fa;
+  --your-avd-box-bg: #ebe5fa;
 
-  --gradient-color-start: #abacd1;
-  --gradient-color-middle: #5d80d2;
-  --gradient-color-end: #e784e7;
-
-  --gradient-gpt-4-color-start: #6bd5b4;
-  --gradient-gpt-4-color-middle: #78fefe;
-  --gradient-gpt-4-color-end: #13e7c4;
-  --gpt-4-color-solid: #922525;
-
-  --organogram-box-bg: #e3dfee;
-  --your-avd-box-bg: #e3dfee;
+  --gpt-35-bg-color: #ebe5fa;
+  --gpt4-bg-color: #6a4279d3;
 
   --heading-of-section-text-size: 3rem;
   --padding-organogram-box: 0.6rem;
 
-  --opacity-box: 1;
+  --opacity-box: 0.96;
   --opacity-sub-box: 1;
 
   --section-cont-pad-top: 6rem;
-  --section-cont-pad-left: 2rem;
-  --section-cont-pad-right: 2rem;
+  --section-cont-pad-left: 1.65rem;
+  --section-cont-pad-right: 1.65rem;
   --section-cont-pad-bott: 10rem;
 
   --border-radius-global: 1rem;
-  --font-size-in-boxes: 1.5rem;
+  --font-size-in-boxes: 1.8rem;
 }
 
 html {
@@ -157,7 +151,7 @@ html {
 }
 
 .text-donate {
-  background: linear-gradient(25deg, var(--gradient-color-start), var(--gradient-color-end));
+  background: linear-gradient(45deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -176,7 +170,7 @@ html {
 }
 
 .with-us {
-  background: linear-gradient(25deg, var(--gradient-color-start), var(--gradient-color-end));
+  background: linear-gradient(45deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -223,7 +217,7 @@ html {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: linear-gradient(25deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
+  background: linear-gradient(45deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -233,7 +227,7 @@ html {
 
 .span3_5 {
   position: relative;
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   align-self: center;
   color: var(--gpt4-bg-color);
   font-family: 'Alumni Sans', sans-serif;
@@ -242,9 +236,9 @@ html {
 }
 
 .gradient-gpt4 {
-  margin-top: 1.5rem;
+  margin-top: 1.2rem;
   padding: 0;
-  background: linear-gradient(45deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end));
+  background: linear-gradient(45deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
   background-clip: text;
   -webkit-background-clip: text;
   display: flex;
@@ -259,15 +253,15 @@ html {
 
 .li_div_3_5 {
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
 }
 
 
 .li_div_4 {
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
 }
 
 ul {
@@ -281,7 +275,7 @@ ul {
 .li_3_5 {
   position: relative;
   text-align: center;
-  margin: 5px;
+  margin-top: 7px;
   color: var(--dark-text-color);
   font-family: 'Alumni Sans', sans-serif;
   font-size: var(--font-size-in-boxes);
@@ -290,7 +284,7 @@ ul {
 .li_4 {
   position: relative;
   text-align: center;
-  margin: 5px;
+  margin-top: 7px;
   background: var(--default-text-color);
   background-clip: text;
   -webkit-background-clip: text;
@@ -306,11 +300,12 @@ ul {
   color: var(--gpt4-bg-color);
   font-family: 'Alumni Sans', sans-serif;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
 }
 
 .div_free_vs_paid_4 {
-  background: linear-gradient(45deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end));
+  margin: 0.25rem;
+  background: linear-gradient(45deg, var(--gradient-color-start), var(--gradient-color-middle), var(--gradient-color-end));
   background-clip: text;
   -webkit-background-clip: text;
   display: flex;
@@ -319,17 +314,15 @@ ul {
   align-self: center;
   color: transparent;
   font-family: 'Alumni Sans', sans-serif;
-  margin: 0.1rem;
   position: relative;
   align-self: center;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.65rem;
 }
 
 .free_vs_paid_3_5 {
   width: 100%;
   height: 100%;
-  margin-top: 0.3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
@@ -337,22 +330,19 @@ ul {
 .free_vs_paid_4 {
   width: 100%;
   height: 100%;
-  margin-top: 0.3rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
 
 .li_3_5_free {
-  margin-top: 0.2rem;
   position: relative;
   text-align: center;
   color: var(--dark-text-color);
   font-family: 'Alumni Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 .li_4_free {
-  margin-top: 0.2rem;
   position: relative;
   text-align: center;
   background: var(--default-text-color);
@@ -360,7 +350,7 @@ ul {
   -webkit-background-clip: text;
   color: transparent;
   font-family: 'Alumni Sans', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 
@@ -380,7 +370,6 @@ ul {
 .gpt-35-free-info-card {
   color: var(--default-text-color);
   padding-top: 0.5rem;
-  padding-bottom: 0.4rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -414,7 +403,6 @@ ul {
 .gpt-4-free-info-card {
   color: var(--default-text-color);
   padding-top: 0.5rem;
-  padding-bottom: 0.4rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -437,7 +425,7 @@ ul {
 }
 
 .model-cards-cont {
-  gap: 5%;
+  gap: 6%;
   width: 100%;
   height: 100%;
   display: flex;
