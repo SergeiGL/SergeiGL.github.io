@@ -11,12 +11,12 @@
 
 
   --gradient-color-start: #abacd1;
-  --gradient-color-middle: #2d62de;
+  --gradient-color-middle: #5d80d2;
   --gradient-color-end: #e784e7;
 
-  --gradient-gpt-4-color-start: #9ead70;
-  --gradient-gpt-4-color-middle: #8c9f20;
-  --gradient-gpt-4-color-end: #d5d522;
+  --gradient-gpt-4-color-start: #6bd5b4;
+  --gradient-gpt-4-color-middle: #78fefe;
+  --gradient-gpt-4-color-end: #13e7c4;
   --gpt-4-color-solid: #922525;
 
   --organogram-box-bg: #e3dfee;
@@ -55,7 +55,7 @@ html {
 }
 
 .audio-class {
-  width: 60%;
+  width: 65%;
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
@@ -233,7 +233,7 @@ html {
 
 .span3_5 {
   position: relative;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   align-self: center;
   color: var(--gpt4-bg-color);
   font-family: 'Alumni Sans', sans-serif;
@@ -241,19 +241,24 @@ html {
   font-size: 3.2rem;
 }
 
-.span4 {
-  position: relative;
-  margin-top: 2rem;
+.gradient-gpt4 {
+  margin-top: 1.5rem;
+  padding: 0;
+  background: linear-gradient(45deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   align-self: center;
-  color: var(--gpt3_5-gb-color);
+  color: transparent;
   font-family: 'Alumni Sans', sans-serif;
-  font-weight: bold;
   font-size: 3.2rem;
+  font-weight: bold;
 }
 
 .li_div_3_5 {
   width: 100%;
-  margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -261,7 +266,6 @@ html {
 
 .li_div_4 {
   width: 100%;
-  margin-top: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -287,8 +291,7 @@ ul {
   position: relative;
   text-align: center;
   margin: 5px;
-  /* background: linear-gradient(25deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end)); */
-  background: var(--gpt-4-color-solid);
+  background: var(--default-text-color);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -296,7 +299,7 @@ ul {
   font-size: var(--font-size-in-boxes);
 }
 
-.span_free_vs_paid_3_5 {
+.div_free_vs_paid_3_5 {
   margin: 0.1rem;
   position: relative;
   align-self: center;
@@ -306,12 +309,19 @@ ul {
   font-size: 1.4rem;
 }
 
-.span_free_vs_paid_4 {
+.div_free_vs_paid_4 {
+  background: linear-gradient(45deg, var(--gradient-gpt-4-color-start), var(--gradient-gpt-4-color-middle), var(--gradient-gpt-4-color-end));
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: center;
+  color: transparent;
+  font-family: 'Alumni Sans', sans-serif;
   margin: 0.1rem;
   position: relative;
   align-self: center;
-  color: var(--gpt3_5-gb-color);
-  font-family: 'Alumni Sans', sans-serif;
   font-weight: bold;
   font-size: 1.4rem;
 }
