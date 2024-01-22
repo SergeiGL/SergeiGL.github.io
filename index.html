@@ -29,8 +29,8 @@
       <span>Что такое CHAT GPT</span>
     </span>
     <div class="audio-class">
-      <audio id="player1" controls>
-        <source src="counting_stars.mp3" type="audio/mp3">
+      <audio class="player" controls>
+        <source src="rec1.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </div>
@@ -54,8 +54,8 @@
       </span>
     </div>
     <div class="audio-class">
-      <audio id="player2" controls>
-        <source src="counting_stars.mp3" type="audio/mp3">
+      <audio class="player" controls>
+        <source src="rec2.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </div>
@@ -93,8 +93,8 @@
       </span>
     </div>
     <div class="audio-class">
-      <audio id="player3" controls>
-        <source src="counting_stars.mp3" type="audio/mp3">
+      <audio class="player" controls>
+        <source src="rec3.mp3" type="audio/mp3">
         Your browser does not support the audio element.
       </audio>
     </div>
@@ -111,8 +111,8 @@
         </span>
       </div>
       <div class="audio-class">
-        <audio id="player4" controls>
-          <source src="counting_stars.mp3" type="audio/mp3">
+        <audio class="player" controls>
+          <source src="rec4.mp3" type="audio/mp3">
           Your browser does not support the audio element.
         </audio>
       </div>
@@ -194,44 +194,16 @@
 <!-- Audio script -->
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    const player1 = new Plyr('#player1', {
+    const players = Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p, {
       controls: [
-        'play-large', // The large play button in the center
-        'rewind', // Rewind by the seek time (default 10 seconds)
-        'play', // Play/pause playback
-        'fast-forward', // Fast forward by the seek time (default 10 seconds)
-        'progress', // The progress bar and scrubber for playback and buffering
+        'play-large', // The large play button in the center 
+        'rewind', // Rewind by the seek time (default 10 seconds) 
+        'play', // Play/pause playback 
+        'fast-forward', // Fast forward by the seek time (default 10 seconds) 
+        'progress', // The progress bar and scrubber for playback and buffering 
       ],
-    });
-    const player2 = new Plyr('#player2', {
-      controls: [
-        'play-large', // The large play button in the center
-        'rewind', // Rewind by the seek time (default 10 seconds)
-        'play', // Play/pause playback
-        'fast-forward', // Fast forward by the seek time (default 10 seconds)
-        'progress', // The progress bar and scrubber for playback and buffering
-      ],
-    });
-    const player3 = new Plyr('#player3', {
-      controls: [
-        'play-large', // The large play button in the center
-        'rewind', // Rewind by the seek time (default 10 seconds)
-        'play', // Play/pause playback
-        'fast-forward', // Fast forward by the seek time (default 10 seconds)
-        'progress', // The progress bar and scrubber for playback and buffering
-      ],
-    });
-    const player4 = new Plyr('#player4', {
-      controls: [
-        'play-large', // The large play button in the center
-        'rewind', // Rewind by the seek time (default 10 seconds)
-        'play', // Play/pause playback
-        'fast-forward', // Fast forward by the seek time (default 10 seconds)
-        'progress', // The progress bar and scrubber for playback and buffering
-      ],
-    });
-  });
-</script>
+    })); players.forEach((player, i, arr) => { player.on('play', () => { pauseOthers(i); }); }); function pauseOthers(index) { players.forEach((player, i) => { if (i != index) player.pause(); }); }
+  }); </script>
 
 <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 
